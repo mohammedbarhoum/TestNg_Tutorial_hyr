@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browserName" value="chrome"/>
+<parameter name="url" value="https://www.demoblaze.com/index.html"/>
+<parameter name="username" value="mohammedbarhoum123"/>
+<parameter name="password" value="mohammedbarhoum123"/>
+ 
+  <test thread-count="5" name="WebsitePart1">
+		<classes>
+			<class name="First_Test.E_CommerceTest">
+				<methods>
+					<include name="OpenWebSite" />
+					<include name="Signin" />
+					<include name="Login" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="WebsitePart2">
+		<classes>
+			<class name="First_Test.E_CommerceTest">
+				<methods>
+					<include name="OpenWebSite" />
+					<include name="Contact_Us" />
+					<include name="About_Us" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+		<test thread-count="5" name="WebsitePart3">
+		<classes>
+			<class name="First_Test.E_CommerceTest">
+				<methods>
+					<include name="OpenWebSite" />
+					<include name="Contact_Us" />
+					<include name="About_Us" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

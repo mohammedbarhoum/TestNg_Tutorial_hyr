@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <groups>
+    <define name="dailyBuild">
+    <include name="sanity"></include>
+    <include name="smoke"></include>
+    </define>
+    <define name="weeklyBuild">
+    <include name="sanity"></include>
+    <include name="smoke"></include>
+    </define>
+    <run>
+    <include name="all"></include>
+   <!-- <include name="dailyBuild"></include>-->
+   <!--  <include name="functinal"></include>-->
+   <!--  <exclude name="smoke"></exclude> -->
+    </run>
+    </groups>
+    <classes>
+    <class name="TestGroup.NewTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

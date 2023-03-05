@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="TestPart3" enabled="true"> 
+		<classes>
+			<class name="First_Test.Test_AddToCart">
+				<methods>
+					<include name="Signin_Login"/>
+					<include name="Add_To_Cart_Part1" />
+					<include name="est_Add_To_Cart_Part2" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- TestPart3 -->
+</suite> <!-- Suite -->

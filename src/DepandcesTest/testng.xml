@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="TestDepances">
+  <groups>
+  <dependencies>
+  <group name="Sanity" depends-on="Smoke"></group>
+   <group name="regression" depends-on="Sanity"></group>
+  
+  </dependencies>
+  </groups>
+    <classes>
+      <class name="DepandcesTest.TestGroupDEp"/>
+    </classes>
+  </test> <!-- TestDepances -->
+</suite> <!-- Suite -->

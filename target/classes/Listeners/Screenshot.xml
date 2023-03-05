@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Listeners.IListenersTest"></listener>
+	</listeners>
+	<test thread-count="5" name="Test1">
+		<classes>
+
+			<class name="Listeners.TestClass1">
+				<methods>
+					<include name="testMethod1"></include>
+					<include name="testMethod2"></include>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Test2">
+		<classes>
+
+			<class name="Listeners.TestClass1">
+				<methods>
+					<include name="testMethod3"></include>
+					<include name="testMethod4"></include>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="First_Test.E_CommerceTest">
+        <methods>
+          <include name="Mobile_Nokia1520"/>
+          <include name="Contact_Us"/>
+          <include name="Testmobile"/>
+          <include name="OpenWebSite"/>
+          <include name="About_Us"/>
+          <include name="Signin"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- First_Test.E_CommerceTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
